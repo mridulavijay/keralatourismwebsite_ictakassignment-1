@@ -50,11 +50,13 @@
           </div>
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
+          <label for="error" id="error"></label>
+          <input type="email" oninput="return evalidate()" class="form-control" id="email">
         </div>
         <div class="col-md-6">
           <label for="inputPassword4" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputPassword4">
+          <input type="password" oninput="return CheckPassword()" class="form-control" id="pwd">
+          <label for="error" id="errorp"></label>
         </div>
         <div class="col-12">
           <label for="inputAddress" class="form-label">Address</label>
@@ -66,7 +68,8 @@
         </div>
         <div class="col-md-6">
           <label for="inputphone" class="form-label">Phone</label>
-          <input type="number" class="form-control" id="inputphone">
+          <input type="text" oninput="return phonecheck()" class="form-control" id="phone">
+          <label for="error" id="errorph"></label>
         </div>
         <!--<div class="col-md-2">
           <label for="inputZip" class="form-label">Pin</label>
@@ -81,7 +84,7 @@
           </div>
         </div>
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign Up</button>
+          <button type="submit" onclick="return sign_v()" class="btn btn-primary">Sign Up</button>
         </div>
       </form>
     </div>  
@@ -94,6 +97,6 @@
       <p class="para1"><b>All rights reserved © Kerala Tourism 2021</b></p>
   
 </footer>
-      
+<script src="js/form.js"></script>      
 </body>
 </html>
