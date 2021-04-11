@@ -6,7 +6,7 @@ let phno=document.getElementById("phone");
 let errorph=document.getElementById("errorph");
 function evalidate(){
 
-  let regexp=/^(?!.*\.{2})([A-Za-z][A-Za-z0-9\-._#]+)@([A-Za-z0-9]+).([a-z]{2,3})(.[a-z]{2,3})+?$/
+  let regexp=/^(?!.*\.{2})([A-Za-z][A-Za-z0-9\-._#]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})+?$/
   if(regexp.test(email.value)){
       error.innerText="Email is valid";
       error.style.color="green";
